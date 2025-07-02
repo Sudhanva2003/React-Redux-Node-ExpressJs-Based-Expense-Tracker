@@ -1,0 +1,103 @@
+/* topnav.css */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.topnav {
+   display: flex;
+   background-color: #799351; /* Light orange color */
+   padding: 30px;
+   /* so what this does is between the actual topnav and the entire space which got the background-color;
+   it adds a padding of 30px */
+   align-items: center; /* this is vertically at the center */
+   justify-content: center; /* Add this to center the date */
+   position: fixed;
+   width: 100%;
+   z-index:1;
+}
+
+
+.profile {
+   display: flex;
+   align-items: center;
+   /* Add this to position the profile to the left */
+   position: absolute;
+   left: 30px;
+}
+
+.profile-picture {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   overflow: hidden;
+}
+
+.topnav a:hover {
+   background-color: #ddd;
+   color: black;
+}
+
+.profile-name {
+   font-family: "montserrat", serif;
+   font-weight: 500;
+   margin-left: 10px;
+   color: black;
+   font-size: 20px;
+}
+
+.date-navigation {
+   display: flex;
+   align-items: center;
+   /* the svgs for date were going up and down only after doing this it went right and left */
+}
+
+.date {
+   font-family: "montserrat", serif;
+   font-weight: 700;
+   color: black;
+   font-size: 25px;
+   margin: 0 10px; /* Add margin to separate the date from the arrows */
+}
+
+.search {
+   /* Add this to position the search to the right */
+   position: absolute;
+   right: 30px;
+}
+
+.svg-left {
+   position: absolute;
+ 
+}
+
+.svg-background {
+   position: relative;
+   cursor: pointer;
+}
+
+
+.svg-background::after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 70px;
+   height: 70px;
+   background: rgba(255, 255, 255, 0.513);
+   border-radius: 50%;
+   transform: translate(-50%, -50%) scale(0);
+   opacity: 0;
+   transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+.svg-background:active::after {
+   transform: translate(-50%, -50%) scale(1);
+   opacity: 1;
+}
+
+.svg-background.active::after {
+   transform: translate(-50%, -50%) scale(1);
+   opacity: 1;
+}
+
+/* Add styles for cards to take full width */
+
+

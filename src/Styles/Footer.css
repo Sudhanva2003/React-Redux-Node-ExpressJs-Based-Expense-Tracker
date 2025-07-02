@@ -1,0 +1,17 @@
+.footer{
+   display:flex;
+   justify-content: space-around;
+   width:100%;
+   position:fixed;
+   bottom:0;
+   background-color: #799351;
+   /* background-color: #e99371; */
+   padding:20px;
+   align-items: center;
+  
+}
+
+.footer .active svg {
+      fill: orange;
+    }
+

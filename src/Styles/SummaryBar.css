@@ -1,0 +1,19 @@
+.summary-bar {
+   display: flex;
+  
+   margin-top:9px;
+  
+   width:100%;
+   align-items: center;
+   position: fixed;
+   justify-content: space-between;
+   background-color: rgba(255, 255, 255, 0.585);
+   padding: 20px;
+   z-index:1;
+}
+
+.summary-item {
+   font-weight: bold;
+   color:black;
+}
+
